@@ -23,7 +23,6 @@ class ListPesananPage(Page):
     harga = models.DecimalField(max_digits=20, decimal_places=0,null=False, blank=False)
 
 
-
     class Meta:
         verbose_name = "Pesanan"
         verbose_name_plural = "Pesanans"
