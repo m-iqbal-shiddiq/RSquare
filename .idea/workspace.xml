@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5450c55-cb4f-4b1e-bc3e-39fefd7d0374" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RSquare/formpesanan/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RSquare/formpesanan/templates/formpesanan/formpesanan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RSquare/formpesanan/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RSquare/home/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RSquare/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RSquare.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RSquare.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSquare/RSquare/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/RSquare/RSquare/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSquare/RSquare/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/RSquare/RSquare/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSquare/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/RSquare/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSquare/home/templates/home/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/RSquare/home/templates/home/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RSquare/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/RSquare/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RSquare/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/RSquare/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,73 +14,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RSquare/RSquare/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RSquare/home/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RSquare/formpesanan/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="3" selection-end-line="5" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RSquare/ListPesanan/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="1" lean-forward="true" selection-end-line="5" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RSquare/home/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RSquare/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RSquare/formpesanan/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+            <state>
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RSquare/formpesanan/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RSquare/RSquare/settings/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2635">
+              <caret line="167" selection-start-line="167" selection-end-line="167" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RSquare/RSquare/settings/dev.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RSquare/formpesanan/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,17 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RSquare/home/templates/home/home_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-69">
+            <state relative-caret-position="221">
               <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RSquare/home/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -116,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RSquare/home/templates/home/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
+            <state relative-caret-position="697">
               <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
             </state>
           </provider>
@@ -144,6 +113,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>user</find>
+      <find>debug</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,6 +136,7 @@
         <option value="$PROJECT_DIR$/RSquare/home/templates/home/home_page.html" />
         <option value="$PROJECT_DIR$/RSquare/RSquare/templates/base.html" />
         <option value="$PROJECT_DIR$/RSquare/contact/templates/contact/contact.html" />
+        <option value="$PROJECT_DIR$/RSquare/manage.py" />
       </list>
     </option>
   </component>
@@ -264,6 +235,13 @@
             <path>
               <item name="RSquare" type="b2602c69:ProjectViewProjectNode" />
               <item name="RSquare" type="462c0819:PsiDirectoryNode" />
+              <item name="RSquare" type="462c0819:PsiDirectoryNode" />
+              <item name="RSquare" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RSquare" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RSquare" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -295,11 +273,6 @@
     <configuration name="base.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/RSquare/RSquare/RSquare/templates/base.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.base.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -324,7 +297,7 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26488096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -424,7 +397,7 @@
     <entry file="file://$PROJECT_DIR$/RSquare/ListPesanan/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="1" lean-forward="true" selection-end-line="5" selection-end-column="1" />
+          <caret line="5" column="1" selection-end-line="5" selection-end-column="1" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -451,20 +424,10 @@
     <entry file="file://$PROJECT_DIR$/RSquare/RSquare/settings/production.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/RSquare/RSquare/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RSquare/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RSquare/RSquare/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        <state relative-caret-position="119">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -500,7 +463,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RSquare/home/templates/home/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="697">
           <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
         </state>
       </provider>
@@ -509,13 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-364">
           <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RSquare/RSquare/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -528,7 +484,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RSquare/home/templates/home/home_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
+        <state relative-caret-position="221">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
@@ -537,6 +493,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Projek/blog_pos/blog_pos/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSquare/RSquare/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2635">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Python37-32/Scripts/django-admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSquare/RSquare/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSquare/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
         </state>
       </provider>
     </entry>
