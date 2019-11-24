@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'search',
     'contact',
     'ListPesanan',
+    'formpesanan',
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
     'wagtail.embeds',

@@ -41,6 +41,9 @@ class Product(Page):
         InlinePanel('custom_fields', label='Custom fields'),
     ]
 
+    def get_id_pesanan(self):
+        return reverse('formpesanan', kwargs={'pk': self.id})
+
     def get_context(self, request):
         context = super().get_context(request)
         fields = []

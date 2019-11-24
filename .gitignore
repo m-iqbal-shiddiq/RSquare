@@ -1,3 +1,7 @@
 
 *.pyc
 *.pyc
+*.pyc
+RSquare/home/__pycache__/models.cpython-37.pyc
+RSquare/RSquare/__pycache__/urls.cpython-37.pyc
+RSquare/RSquare/settings/__pycache__/base.cpython-37.pyc

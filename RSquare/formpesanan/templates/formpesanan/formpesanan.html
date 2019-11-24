@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load wagtailimages_tags %}
+
+{% block content %}
+    <div class="create pesanan">
+        <h2>Buat Pesanan</h2>
+        <form class="site-form" method="post">
+            title = {{ page.title }}
+            <script>console.log({{page.title}})</script>
+        </form>
+    </div>
+
+{% endblock %}
