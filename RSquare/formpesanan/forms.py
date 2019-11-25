@@ -1,5 +1,12 @@
 from django import forms
 
+from .models import Pesanan
+
 class CreatePesanan(forms.ModelForm):
     class Meta:
-        fields = ['title','sku','short_description','price','image']
+        model = Pesanan
+        fields = ['nama',
+                  'no_wa',
+                  'title',
+                  'price'
+                  ]

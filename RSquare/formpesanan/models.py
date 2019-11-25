@@ -24,5 +24,5 @@ class Pesanan(models.Model):
         product = Product.objects.get(id=product_id)
         return reverse('formpesanan', kwargs={'product':product})
 
-    def save(self, *args, **kwargs):
-        super().save(*args,**kwargs)
+    # def save(self, *args, **kwargs):
+    #     super().save(*args,**kwargs)

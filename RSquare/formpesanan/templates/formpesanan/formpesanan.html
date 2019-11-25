@@ -2,12 +2,33 @@
 {% load wagtailimages_tags %}
 
 {% block content %}
-    <div class="create pesanan">
-        <h2>Buat Pesanan</h2>
-        <form class="site-form" method="post">
-            title = {{ product.title }}
-            <script>console.log({{product.title}})</script>
-        </form>
-    </div>
+    {% image product.image max-300x300 as temp_image %}
+    <img src="{{temp_image.url}}" alt="" />
 
+    <form method="post">{% csrf_token %}
+        <div class="form-group">
+            <label for="formGroupExampleInput">Jenis</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" value="{{ product.title }}" disabled>
+        </div>
+
+        <div class="form-group">
+            <label for="formGroupExampleInput">Harga</label>
+            <input type="text"  class="form-control" id="formGroupExampleInput2" value="{{ product.price }}" disabled>
+        </div>
+
+        <div class="form-group">
+            <label for="formGroupExampleInput">Nama</label>
+            <input type="text" name="nama" class="form-control" id="formGroupExampleInput3" placeholder="Nama">
+        </div>
+
+        <div class="form-group">
+            <label for="formGroupExampleInput">No. HP (Untuk WA)</label>
+            <input type="text" name="no_wa" class="form-control" id="formGroupExampleInput4" placeholder="08x-xxx-xxx-xxx">
+        </div>
+
+        <input type="hidden" name="title" value="{{product.title}}">
+        <input type="hidden" name="price" value="{{product.price}}">
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
 {% endblock %}
