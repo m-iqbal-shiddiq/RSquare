@@ -6,16 +6,17 @@
     <div class="container grid-lg">
         <div class="columns">
             <div class="column col-4">
-                {% image page.image max-300x300 as temp_image %}
-                <img src="{{ temp_image.url }}" alt="" />
+                {% image product.image max-300x300 as temp_image %}
+                <script>console.log(temp_image)</script>
+                <img src="{{temp_image.url}}" alt="" />
             </div>
             <div class="column col-8">
                 <h1>
-                    {{ page.title }}
+                    {{ product.title }}
                 </h1>
 
                 <p>
-                    {{ page.short_description }}
+                    {{ product.short_description }}
                 </p>
 
                 <p>
@@ -36,11 +37,11 @@
                         {% endif %}
                     {% endfor %}
                 </p>
-                <script>console.log({{page.title}})</script>
-                <button class=" btn btn-primary" value="product">
+                <script>console.log({{product.id}})</script>
+                <a type="submit" class=" btn btn-primary" value="{{product.id}}" href='{% url 'home:passidpesanan' pk=product.id %}'>
                     <i class="icon icon-plus"></i>
                     <a href="../formpesanan">Add to cart </a>
-                </button>
+                </a>
             </div>
         </div>
     </div>

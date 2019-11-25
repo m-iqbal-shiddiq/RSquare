@@ -1,5 +1,6 @@
 from django.db import models
 from home.models import Product
+from django.shortcuts import reverse
 # Create your models here.
 
 class Pesanan(models.Model):
@@ -18,6 +19,10 @@ class Pesanan(models.Model):
     )
     class Meta:
         verbose_name = 'Pesanan'
+
+    def get_product(self,product_id):
+        product = Product.objects.get(id=product_id)
+        return reverse('formpesanan', kwargs={'product':product})
 
     def save(self, *args, **kwargs):
         super().save(*args,**kwargs)

@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^listpesanan/', include('ListPesanan.urls')),
     url(r'^formpesanan/', include('formpesanan.urls')),
     url(r'^contact/', include('contact.urls')),
+    url(r'^product/', include('home.urls')),
     url(r'^search/$', search_views.search, name='search'),
 
     # For anything not caught by a more specific rule above, hand over to
