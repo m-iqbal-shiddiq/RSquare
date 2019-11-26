@@ -5,7 +5,8 @@
     {% image product.image max-300x300 as temp_image %}
     <img src="{{temp_image.url}}" alt="" />
 
-    <form method="post">{% csrf_token %}
+    <form method="post" action="{% url 'home:submitpesanan' %}">{% csrf_token %}
+
         <div class="form-group">
             <label for="formGroupExampleInput">Jenis</label>
             <input type="text" class="form-control" id="formGroupExampleInput" value="{{ product.title }}" disabled>
@@ -18,17 +19,22 @@
 
         <div class="form-group">
             <label for="formGroupExampleInput">Nama</label>
-            <input type="text" name="nama" class="form-control" id="formGroupExampleInput3" placeholder="Nama">
+
+            {{form.nama}}
+<!--            <input type="text" name="nama" class="form-control" id="formGroupExampleInput3" placeholder="Nama">-->
         </div>
 
         <div class="form-group">
             <label for="formGroupExampleInput">No. HP (Untuk WA)</label>
-            <input type="text" name="no_wa" class="form-control" id="formGroupExampleInput4" placeholder="08x-xxx-xxx-xxx">
+            {{form.no_wa}}
+<!--            <input type="text" name="no_wa" class="form-control" id="formGroupExampleInput4" placeholder="08x-xxx-xxx-xxx">-->
         </div>
 
         <input type="hidden" name="title" value="{{product.title}}">
         <input type="hidden" name="price" value="{{product.price}}">
-
+        <input type="hidden" name="id_product" value="{{product.id}}">
+        <input type="hidden" name="image" value="{{temp_image}}">
+        <h2>{{nama}}</h2>
         <button type="submit" class="btn btn-primary">Sign in</button>
     </form>
 {% endblock %}

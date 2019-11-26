@@ -4,7 +4,7 @@ from django.shortcuts import reverse
 # Create your models here.
 
 class Pesanan(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.PROTECT)
+    id_product = models.IntegerField(default=0)
     date = models.DateField(auto_now=True)
     nama = models.CharField(null=False, blank=False, max_length=20)
     no_wa = models.CharField(null=False, blank=False,max_length=12)

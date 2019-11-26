@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import CreatePesananView
-
+app_name='formpesanan'
 urlpatterns = [
-   path('', CreatePesananView.as_view(template_name = "formpesanan/formpesanan.html"), name='formpesanan')
+    path('product/12/formpesanan', CreatePesananView.as_view(), name='formpesanan'),
+    # path(r'^submitpesanan', CreatePesananView.post, name='passidpesanan')
 ]
