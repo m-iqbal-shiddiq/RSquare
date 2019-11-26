@@ -1,10 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-TEST
-</body>
-</html>
+{% extends "base.html" %}
+{% load wagtailimages_tags %}
+
+{% block content %}
+    <h1> LIST PESANAN </h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Tanggal</th>
+              <th scope="col">Nama</th>
+              <th scope="col">No WA</th>
+              <th scope="col">Jenis</th>
+              <th scope="col">Harga</th>
+              <th scope="col">ID Produk</th>
+            </tr>
+          </thead>
+
+          <tbody>
+          {% for pesanan in pesanans %}
+            <tr>
+              <td>{{ pesanan.id }}</td>
+              <td>{{ pesanan.date }}</td>
+              <td>{{ pesanan.nama }}</td>
+              <td>{{ pesanan.no_wa }}</td>
+              <td>{{ pesanan.title }}</td>
+              <td>{{ pesanan.price }}</td>
+              <td>{{ pesanan.id_product }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+
+        </table>
+{% endblock %}

@@ -3,11 +3,12 @@
 from django.db import models
 from wagtail.admin.edit_handlers import FieldPanel
 from wagtail.core.models import Page
+from formpesanan.models import Pesanan
 
 
 # Create your models here.
-
 class ListPesananPage(Page):
+
     template = "ListPesanan/listpesanan.html"
 
     #content
