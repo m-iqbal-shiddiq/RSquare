@@ -17,10 +17,12 @@ def passidpesanan(request, pk):
 def post(request):
         form = FormPesanan(request.POST)
         if form.is_valid():
+            form.save()
             nama = form.cleaned_data['nama']
+            title = form.cleaned_data['title']
+            harga = form.cleaned_data['price']
         else:
             print('form tidak valid')
-            print(form)
-        args = {'form':form, 'nama':nama}
+        args = {'form':form, 'nama':nama, 'title': title, 'harga':harga}
         return render(request, 'home/finishpesanan.html', args)
 
