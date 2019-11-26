@@ -26,6 +26,11 @@
               <td>{{ pesanan.title }}</td>
               <td>{{ pesanan.price }}</td>
               <td>{{ pesanan.id_product }}</td>
+              <td>
+                <a type="submit" class="btn btn-danger" value="{{pesanan.id}}" href='{% url 'listpesanan:deletepesanan' pk=pesanan.id %}'>
+                Hapus Pesanan
+                </a>
+              </td>
             </tr>
           {% endfor %}
           </tbody>
