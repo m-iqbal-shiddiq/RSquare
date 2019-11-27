@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^listpesanan/', include('ListPesanan.urls')),
     url(r'^formpesanan/', include('formpesanan.urls')),
     url(r'^contact/', include('contact.urls')),
+    url(r'^profile/', include('profilePerusahaan.urls')),
     url(r'^product/', include('home.urls')),
     url(r'^search/$', search_views.search, name='search'),
 

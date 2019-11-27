@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'contact',
     'ListPesanan',
     'formpesanan',
+    'profilePerusahaan',
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
     'wagtail.contrib.modeladmin',
