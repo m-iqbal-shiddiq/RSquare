@@ -4,17 +4,20 @@
 
 {% block content %}
     <div class="container grid-lg">
+        <br>
+        <br>
         <div class="columns">
             <div class="column col-4">
                 {% image product.image max-300x300 as temp_image %}
                 <img src="{{temp_image.url}}" alt="" />
             </div>
             <div class="column col-8">
-                <h1>
+                <h1 align="center">
                     {{ product.title }}
                 </h1>
 
-                <p>
+                <br>
+                <p style="font-size: 18px">
                     {{ product.short_description }}
                 </p>
 
@@ -36,21 +39,16 @@
                         {% endif %}
                     {% endfor %}
                 </p>
-                <a type="submit" class=" btn btn-primary" value="{{product.id}}" href='{% url 'home:passidpesanan' pk=product.id %}'>
-                    <i class="icon icon-plus"></i>Add to cart </a>
-                </a>
+
             </div>
         </div>
+
+        <br>
+        <br>
+        <a type="submit" class="btn btn-primary btn-lg btn-block" value="{{product.id}}" href='{% url 'home:passidpesanan' pk=product.id %}'>
+                    <b>PESAN (Rp. {{ product.price }})</b></a>
+
     </div>
 
-<!--    <script>-->
-<!--        document.addEventListener('DOMContentLoaded', function() {-->
-<!--            document.querySelector('.custom-field-select').onchange = function(event) {-->
-<!--                if (event.target.dataset.field) {-->
-<!--                    document.querySelector('.snipcart-add-item')-->
-<!--                        .dataset['itemCustom' + event.target.dataset.field + 'Value'] = event.target.value;-->
-<!--                }-->
-<!--            };-->
-<!--        },false);-->
-<!--    </script>-->
+
 {% endblock %}
