@@ -1,9 +1,29 @@
-ul#mynavbar li{
+ul#listNavbar li{
     display : inline;
+    position: relative;
 }
 
 .abs-center-x {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+    font-size: 15px;
+    position: center;
+}
+
+.nav-item {
+    color: #ffffff;
 }

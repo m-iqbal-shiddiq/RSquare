@@ -43,25 +43,35 @@
         {% endif %}
     </head>
 
-     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="mynavbar">
 
         <div class="d-flex w-50 order-0">
             <a class="navbar-brand mr-2" href="/">RSquare</a>
         </div>
 
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <ul class="navbar-nav nav-fill w-100" id="mynavbar">
-                <li class="nav-item active">
+            <ul class="navbar-nav nav-fill w-100" id="listNavbar">
+                <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/profile">Profil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Kontak</a>
                 </li>
             </ul>
         </div>
+
+         <div class="d-sm-flex align-items-center justify-content-between mb-4">
+             <ul class="navbar-nav nav-fill w-100" id="listNavbar">
+                 <li class="nav-item">
+                     <a class="nav-link" href="/profile">Profil</a>
+                 </li>
+             </ul>
+         </div>
+
+         <div class="d-sm-flex align-items-center justify-content-between mb-4">
+             <ul class="navbar-nav nav-fill w-100" id="listNavbar">
+                 <li class="nav-item">
+                     <a class="nav-link" href="/contact">Kontak</a>
+                 </li>
+             </ul>
+         </div>
 
         <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last"></span>
     </nav>
@@ -118,4 +128,10 @@
             {# Override this in templates to add extra javascript #}
         {% endblock %}
     </body>
+
+<div class="footer">
+    <br>
+  <p> PURI Inc (2019)</p>
+</div>
+
 </html>

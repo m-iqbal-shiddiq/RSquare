@@ -2,19 +2,21 @@
 {% load wagtailimages_tags %}
 
 {% block content %}
-
-    <h1>
-        Welcome to RSquare
+    <br>
+    <br>
+    <h1 align="center">
+       <b> Welcome to RSquare  </b>
     </h1>
+    <br>
 
 <!--    <a class="btn btn-primary" href="/contact">Useradministration</a>-->
 
     <div class="columns">
         {% for product in products %}
-            <div class="column col-6">
+            <div class="column col-4">
                 <div class="card">
                     <div class="card-image">
-                        {% image product.image fill-1000x200 as tmp_image %}
+                        {% image product.image max-320x320 as tmp_image %}
 
                         <img src="{{ tmp_image.url }}" alt="" class="img-responsive">
                     </div>
@@ -27,9 +29,10 @@
 
                     <div class="card-body">
                         <a href='{% url 'home:ProductDetail' pk=product.id %}'" class="btn btn-primary float-right">
-                            <i class="icon icon-plus"></i>
+                            <p> Pesan </p>
                         </a>
-                        {{ product.description }} {{product.price}}
+
+                        <p> Rp. {{product.price}} </p>
 
                     </div>
 
@@ -37,4 +40,6 @@
             </div>
         {% endfor %}
     </div>
+<br>
+<br>
 {% endblock %}
