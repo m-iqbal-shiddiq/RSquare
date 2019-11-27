@@ -10,6 +10,8 @@ class Pesanan(models.Model):
     no_wa = models.CharField(null=False, blank=False,max_length=12)
     title = models.CharField(null=False, blank=False,max_length=20)
     price = models.DecimalField(decimal_places=2, max_digits=10)
+    catatan = models.CharField(null=False, blank=False, max_length=20, default='')
+    alamat = models.CharField(null=False, blank=False, max_length=20, default='')
     image = models.ForeignKey(
         'wagtailimages.Image',
         null=True,
