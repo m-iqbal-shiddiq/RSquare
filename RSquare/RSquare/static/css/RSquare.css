@@ -10,9 +10,10 @@ ul#listNavbar li{
 }
 
 .footer {
-  position: fixed;
+    position: relative;
   left: 0;
   bottom: 0;
+    padding-bottom: 20px;
   width: 100%;
   background-color: black;
   color: white;

@@ -2,48 +2,78 @@
 {% load wagtailimages_tags %}
 
 {% block content %}
-    {% image product.image max-300x300 as temp_image %}
-    <img src="{{temp_image.url}}" alt="" />
+<br>
 
+    {% image product.image max-250x250 as temp_image %}
+<p style="text-align: center"><img src="{{temp_image.url}}" align="center" alt="" /></p>
+<table class="table">
+    <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
     <form method="post" action="{% url 'home:submitpesanan' %}">{% csrf_token %}
-
         <div class="form-group">
-            <label for="formGroupExampleInput">Jenis</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" value="{{ product.title }}" disabled>
+            <tr>
+              <td> <label for="formGroupExampleInput">Jenis</label></td>
+              <td><input type="text" class="form-control" id="formGroupExampleInput" value="{{ product.title }}" disabled></td>
+            </tr>
         </div>
 
         <div class="form-group">
-            <label for="formGroupExampleInput">Harga</label>
-            <input type="text"  class="form-control" id="formGroupExampleInput2" value="{{ product.price }}" disabled>
+            <tr>
+                <td><label for="formGroupExampleInput">Harga</label></td>
+                <td><input type="text"  class="form-control" id="formGroupExampleInput2" value="{{ product.price }}" disabled></td>
+            </tr>
         </div>
 
         <div class="form-group">
-            <label for="formGroupExampleInput">Nama</label>
-
-            {{form.nama}}
+            <tr>
+                <td><label for="formGroupExampleInput">Nama</label></td>
+                <td>{{form.nama}}</td>
 <!--            <input type="text" name="nama" class="form-control" id="formGroupExampleInput3" placeholder="Nama">-->
+            </tr>
         </div>
 
         <div class="form-group">
-            <label for="formGroupExampleInput">No. HP (Untuk WA)</label>
-            {{form.no_wa}}
+            <tr>
+                <td><label for="formGroupExampleInput">No. HP (Untuk WA)</label></td>
+                <td> {{form.no_wa}} </td>
 <!--            <input type="text" name="no_wa" class="form-control" id="formGroupExampleInput4" placeholder="08x-xxx-xxx-xxx">-->
+            </tr>
         </div>
+
         <div class="form-group">
-            <label for="formGroupExampleInput">Catatan</label>
-         <input type="text" name="catatan" value="{{product.catatan}}" placeholder="ukuran, jumlah, dll"> <br>
+            <tr>
+                <td><label for="formGroupExampleInput">Catatan</label></td>
+                <td><input type="text" name="catatan" value="{{product.catatan}}" placeholder="ukuran, jumlah, dll"> <br></td>
 <!--            <input type="text" name="no_wa" class="form-control" id="formGroupExampleInput4" placeholder="08x-xxx-xxx-xxx">-->
+            </tr>
         </div>
+
         <div class="form-group">
-            <label for="formGroupExampleInput">Alamat</label>
-         <input type="text" name="alamat" value="{{product.alamat}}"> <br>
+            <tr>
+                <td><label for="formGroupExampleInput">Alamat</label></td>
+                <td><input type="text" name="alamat" value="{{product.alamat}}"> <br></td>
 <!--            <input type="text" name="no_wa" class="form-control" id="formGroupExampleInput4" placeholder="08x-xxx-xxx-xxx">-->
+            </tr>
         </div>
         <input type="hidden" name="title" value="{{product.title}}">
         <input type="hidden" name="price" value="{{product.price}}">
         <input type="hidden" name="id_product" value="{{product.id}}">
         <input type="hidden" name="image" value="{{temp_image}}">
 
-        <button type="submit" class="btn btn-primary">Pesan</button>
+
+
+    </tbody>
+</table>
+<br>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Pesan</button>
     </form>
+
+<br>
+<br>
+<br>
 {% endblock %}
