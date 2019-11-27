@@ -1,2 +1,29 @@
 {% extends "base.html" %}
 {% load wagtailimages_tags %}
+{% load staticfiles%}
+
+{% block content %}
+<br>
+<br>
+<br>
+<div>
+    <p style="text-align: center">
+        <img src="{% static 'images/logo.png'%}" herf="/" alt=""/>
+    </p>
+</div>
+
+<div>
+    <p style="text-align: center; font-size: 18pt">
+        <b>RSquare</b> merupakan sistem informasi yang diciptakan oleh Puri Inc. <b>RSquare</b> diciptakan untuk menghubungkan konsumen yang ingin memesan produk sandang kepada konveksi. <b>RSquare</b> menghubungkan berbagai jenis konsumen pada konveksi berbasi UMKM yang terletak di desa Tegal Waru, Bogor, Jawa Barat.
+    </p>
+</div>
+
+<div>
+    <p style="text-align: center; font-size: 18pt">
+        <u><b>Kontak Kami :</b></u> <br>
+        <b>Whatsapp</b> : 081 220 225 087 <br>
+        <b>Instagram</b> : @RSquare_id <br>
+        <b>Line</b> :@R_Square
+    </p>
+</div>
+{% endblock %}
