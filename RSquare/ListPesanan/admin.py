@@ -21,6 +21,6 @@ class ListPesananAdmin(ModelAdmin):
     menu_order = 290
     add_to_settings_menu = False
     exclude_from_explorer = False
-    list_display = ("id_product",'date','nama','no_wa','title','price')
+    list_display = ("id_product",'date','nama','no_wa','title','price','alamat','catatan')
 
 modeladmin_register(ListPesananAdmin)
